@@ -133,7 +133,7 @@ use GuzzleHttp\Client;
                     <div class="card" style="margin-bottom: 10px;">
                         <div class="card-body text-center">
                             <a href="{{ route('summary') }}">
-                                <h3><i class="fas fa-industry"></i></h3>
+                                <h3><i class="fas fa-chart-bar"></i></h3>
                                 Summary
                             </a>
                         </div>
