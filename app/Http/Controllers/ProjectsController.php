@@ -112,7 +112,7 @@ class ProjectsController extends Controller
                 $total_weight += $component->weight;
             }
             if ($total_weight > 0) {
-                $weighted_average = number_format(($total_score/$total_weight)*100, 1);
+                $weighted_average = number_format(($total_score/$total_weight)*100);
             }
         }
         

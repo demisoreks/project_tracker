@@ -53,12 +53,12 @@
                         if ($total_weight == 0) {
                             $weighted_average = 0;
                         } else {
-                            $weighted_average = number_format(($total_score/$total_weight)*100, 1);
+                            $weighted_average = number_format(($total_score/$total_weight)*100);
                         }
                     }
                     ?>
                 </td>
-                <td class="text-center"><?php echo number_format($weighted_average, 1) ?>%</td>
+                <td class="text-center"><?php echo number_format($weighted_average) ?>%</td>
                 <td class="text-right">{{ number_format($project->budget, 2) }}</td>
                 <td class="text-right @if ($amount_spent > $project->budget) text-danger @endif">{{ number_format($amount_spent, 2) }}</td>
             </tr>
