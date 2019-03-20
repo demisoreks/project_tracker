@@ -16,10 +16,10 @@
     <div class="col-12">
         <div id="accordion">
             <div class="card">
-                <div class="card-header bg-secondary text-primary" id="heading1" style="padding: 0;">
+                <div class="card-header bg-white text-primary" id="heading1" style="padding: 0;">
                     <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                            Active
+                            <strong>Active</strong>
                         </button>
                     </h5>
                 </div>
@@ -33,7 +33,7 @@
                                     <th width="10%"><strong>START DATE</strong></th>
                                     <th width="10%"><strong>END DATE</strong></th>
                                     <th width="10%"><strong>WEIGHT</strong></th>
-                                    <th width="10%"><strong>PERCENTAGE</strong></th>
+                                    <!--<th width="10%"><strong>PERCENTAGE</strong></th>-->
                                     <th width="10%">&nbsp;</th>
                                 </tr>
                             </thead>
@@ -46,7 +46,7 @@
                                     <td>{{ $component->start_date }}</td>
                                     <td>{{ $component->end_date }}</td>
                                     <td class="text-right">{{ $component->weight }}</td>
-                                    <td class="text-right"></td>
+                                    <!--<td class="text-right"></td>-->
                                     <td class="text-center">
                                         <a title="Edit" href="{{ route('projects.components.edit', [$project->slug(), $component->slug()]) }}"><i class="fas fa-edit"></i></a>
                                     </td>

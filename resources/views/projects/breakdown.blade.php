@@ -7,7 +7,7 @@
         <table class="table table-striped table-bordered table-hover">
             <tr>
                 <td width="35%"><strong>Name</strong></td>
-                <td class="@if (date('Y-m-d') > $project->end_date && $project->status == 'A') text-danger @endif">{{ $project->name }}</td>
+                <td>{{ $project->name }}</td>
             </tr>
             <tr>
                 <td><strong>Vendor</strong></td>
@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <td><strong>End Date</strong></td>
-                <td>{{ $project->end_date }}</td>
+                <td class="@if (date('Y-m-d') > $project->end_date && $project->status == 'A') text-danger @endif">{{ $project->end_date }}</td>
             </tr>
             <tr>
                 <td><strong>Status</strong></td>
